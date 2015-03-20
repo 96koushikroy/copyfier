@@ -1,0 +1,18 @@
+<template name="mytexts">
+    <div align="center">
+        <h1>Your Texts</h1>
+
+        {{#each texts}}
+            <p>{{text}}</p>
+        {{else}}
+            <h3>No data found...</h3>
+        {{/each}}
+
+
+        <a class="btn btn-primary" href="../read"><i class="fa-chevron-circle-left fa"></i> Go Back</a>
+    </div>
+    <footer class="foo">
+
+        <p>Made with <i class="fa fa-heart"></i> by Koushik | <a href="http://www.facebook.com/96koushikroy"><i class="fa fa-facebook"></i></a> | <a href="http://www.github.com/96koushikroy"><i class="fa fa-github"></i></a></p>
+    </footer>
+</template>

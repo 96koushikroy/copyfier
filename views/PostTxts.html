@@ -1,0 +1,49 @@
+<template name="copy">
+
+    <div class="navbar navbar-default">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/"><i class="fa fa-laptop"></i> copyfier <i class="fa fa-desktop"></i></a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../">Home</a></li>
+                <li class="active"><a href="../copy">Share Texts</a></li>
+                <li><a href="../read">Check Texts</a></li>
+            </ul>
+        </div>
+    </div>
+    <div align="center">
+
+        <br />
+        <button class="btn btn-primary" data-toggle="modal" data-target="#simple-dialog">Instructions</button><br />
+        <h1>Code: {{id}}</h1>
+        <form>
+            <textarea cols="40" placeholder="Enter information to share!" name="txtdata"></textarea><br />
+            <input type="submit" value="Add" class="btn btn-warning btn-raised">
+        </form>
+
+        <br />
+        <label>Saved Texts will only be available for 30 minutes.</label>
+
+        <div id="simple-dialog" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3>Write all your texts in the labelled area. Copy the given code below. And use the code on the other side to get all the texts. Thats it! <i class="fa fa-smile-o"></i>  </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <footer class="foo">
+
+        <p>Made with <i class="fa fa-heart"></i> by Koushik | <a href="http://www.facebook.com/96koushikroy"><i class="fa fa-facebook"></i></a> | <a href="http://www.github.com/96koushikroy"><i class="fa fa-github"></i></a></p>
+    </footer>
+</template>
